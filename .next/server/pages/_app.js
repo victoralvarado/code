@@ -34,7 +34,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-
 function MyApp({
   Component,
   pageProps
@@ -43,6 +42,13 @@ function MyApp({
     children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)((head_default()), {
       children: [/*#__PURE__*/jsx_runtime_.jsx("title", {
         children: "victoralvaradocode"
+      }), /*#__PURE__*/jsx_runtime_.jsx("link", {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com"
+      }), /*#__PURE__*/jsx_runtime_.jsx("link", {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: true
       }), /*#__PURE__*/jsx_runtime_.jsx("link", {
         rel: "stylesheet",
         href: "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.0/cosmo/bootstrap.min.css",

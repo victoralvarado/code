@@ -3,6 +3,107 @@ import Layout from "../components/Layout";
 import { skills, projects, publics } from "../profile";
 const Index = () => (
   <Layout>
+    
+    <style jsx>{`
+body {
+  font-family: 'Ubuntu', sans-serif;
+  padding: auto;
+  margin: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wave-container {
+  position: relative;
+  background: #09f;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.wave-container > svg {
+  display: block;
+}
+.btnn {
+  border-radius: 20px;
+}
+.c{
+  border-radius: 20px;
+}
+.cp{
+  border-radius: 20px;
+}
+.img{
+  border-radius: 20px 20px 0px 0px;
+}
+.ic {
+  transition: 0.5s;
+}
+.c:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.c::before,
+.c::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+.c::before {
+  transform-origin: left top;
+}
+.c:hover::after {
+  transform-origin: right bottom;
+}
+.c:hover::before,
+.c:hover::after,
+.c:focus::before,
+.c:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overflow {
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+  }
+  
+  .overflow .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .overflow .card-img-top:hover {
+    transform: scale(1.8);
+  }
+  
+  #nprogress .bar {
+    background: #ff5367 !important;
+  }
+  
+  #nprogress .spinner-icon {
+    border-top-color: #ffbb00;
+    border-left-color: #ffbb00;
+  }
+    `}</style>
     {/* Header*/}
     <div
       className="landing-header wave-container"
