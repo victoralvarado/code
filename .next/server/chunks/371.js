@@ -34,11 +34,13 @@ const Navbar = () => /*#__PURE__*/jsx_runtime_.jsx("nav", {
     children: [profile/* publics.map */.vC.map(({
       nav
     }, i) => /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-      href: "/",
-      children: /*#__PURE__*/jsx_runtime_.jsx("img", {
-        src: nav,
-        alt: "VA",
-        height: "45px"
+      href: "\\",
+      children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+        children: /*#__PURE__*/jsx_runtime_.jsx("img", {
+          src: nav,
+          alt: "VA",
+          height: "45px"
+        })
       })
     }, i)), /*#__PURE__*/jsx_runtime_.jsx("button", {
       className: "navbar-toggler",

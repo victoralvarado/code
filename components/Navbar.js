@@ -4,8 +4,8 @@ const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark" style={{background: '#252E3C'}}>
     <div className="container">
       {publics.map(({nav},i)=>(
-        <Link href="/" key={i}>
-        <img src={nav} alt="VA" height="45px" />
+        <Link href="\" key={i}>
+        <a><img src={nav} alt="VA" height="45px" /></a>
       </Link>
       ))}
       
