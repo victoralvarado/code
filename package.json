@@ -1,11 +1,11 @@
 {
-  "name": "https://github.com/victoralvarado/code.git",
+  "homepage":"https://victoralvarado.github.io/code",
+  "name": "victoralvaradocode",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
