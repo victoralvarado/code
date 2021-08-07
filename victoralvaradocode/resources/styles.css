@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: auto;
+  margin: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wave-container {
+  position: relative;
+  background: #09f;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.wave-container > svg {
+  display: block;
+}
+.btnn {
+  border-radius: 20px;
+}
+.c{
+  border-radius: 20px;
+}
+.cp{
+  border-radius: 20px;
+}
+.img{
+  border-radius: 20px 20px 0px 0px;
+}
+.ic {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.c:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.c::before,
+.c::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+.c::before {
+  transform-origin: left top;
+}
+.c:hover::after {
+  transform-origin: right bottom;
+}
+.c:hover::before,
+.c:hover::after,
+.c:focus::before,
+.c:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
