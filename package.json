@@ -2,9 +2,13 @@
   "name": "myapp",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://victoralvarado.github.io/code",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +16,7 @@
   "dependencies": {
     "bootstrap-icons": "^1.5.0",
     "bootswatch": "^5.1.0",
+    "gh-pages": "^3.2.3",
     "next": "^11.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
