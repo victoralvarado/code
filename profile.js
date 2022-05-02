@@ -64,7 +64,7 @@ export const projects = [
     img: "startup.png",
     url1: "#",
     url2: "#",
-    boton1: "",
+    boton1: "none",
     boton2: "",
   },
   {
